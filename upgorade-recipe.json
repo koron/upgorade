@@ -1,0 +1,13 @@
+{
+  "source": {
+    "url": "http://files.kaoriya.net/vim/snapshots/latest.json",
+    "selectors": {
+      "x86": "vim74w32",
+      "amd64": "vim74w64"
+    }
+  },
+  "targets": [
+    "gvim.exe",
+    "vim.exe"
+  ]
+}
