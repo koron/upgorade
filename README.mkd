@@ -1,1 +1,9 @@
 # Online upgrader
+
+To build general upgorade (for Windows):
+
+    go build -o upgorade.exe main.go upgorade.go util.go
+
+To build Vim (+kaoriya0 specific upgorade:
+
+    go build upgorade-vim.go upgorade.go util.go
