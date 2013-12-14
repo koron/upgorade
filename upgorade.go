@@ -244,13 +244,7 @@ func (recipe *Recipe) upgrade() (result bool, err error) {
 	return
 }
 
-func main() {
-	name := "./upgorade-recipe.json"
-	recipe, err := loadRecipe(name)
-	if err != nil {
-		fmt.Println("Failed to load recipe:", err)
-		return
-	}
+func (recipe *Recipe) run() {
 	upgraded, err := recipe.upgrade()
 	if err != nil {
 		fmt.Println("Upgrade failed:", err)
