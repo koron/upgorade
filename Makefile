@@ -6,8 +6,8 @@ clean:
 	rm -f upgorade.exe upgorade
 	rm -f upgorade-vim.exe upgorade-vim
 
-upgorade: upgorade.go
+upgorade: upgorade.go common/*.go
 	go build $(GO_BUILD_OPTS) upgorade.go
 
-upgorade-vim: upgorade-vim.go
+upgorade-vim: upgorade-vim.go common/*.go
 	go build $(GO_BUILD_OPTS) upgorade-vim.go
