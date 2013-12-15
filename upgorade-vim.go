@@ -1,10 +1,14 @@
 package main
 
+import (
+	"./common"
+)
+
 func main() {
-	recipe := &Recipe{
-		Source{
+	recipe := &common.Recipe{
+		common.Source{
 			"http://files.kaoriya.net/vim/snapshots/latest.json",
-			Selectors {
+			common.Selectors {
 				"vim74w32",
 				"vim74w64",
 			},
@@ -14,5 +18,5 @@ func main() {
 			"vim.exe",
 		},
 	}
-	recipe.run()
+	recipe.Run()
 }
