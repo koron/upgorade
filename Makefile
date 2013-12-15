@@ -18,6 +18,7 @@ upgorade-vim: upgorade-vim.go common/*.go
 	go build $(GO_BUILD_OPTS) upgorade-vim.go
 
 $(PKGNAME_WIN32).zip: upgorade-vim
+	rm -f $@
 	rm -rf $(PKGNAME_WIN32)
 	mkdir $(PKGNAME_WIN32)
 	cp upgorade-vim.exe $(PKGNAME_WIN32)/
