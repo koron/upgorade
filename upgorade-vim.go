@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./common"
+	"github.com/koron/upgorade/common"
 )
 
 func main() {
